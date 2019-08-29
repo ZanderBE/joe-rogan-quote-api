@@ -1,0 +1,27 @@
+{
+  "name": "joe-rogan-quote-api",
+  "author": "Zander Brownlie-Edward",
+  "version": "1.0.0",
+  "description": "API database serving Joe Rogan quotes through JSON",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.3.0",
+    "body-parser": "^1.19.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/joe-rogan-quote-api"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
