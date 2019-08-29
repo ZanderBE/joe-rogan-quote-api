@@ -1,0 +1,67 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Joe Rogan API Experience</title>
+    <meta name="description" content="An API supplying Joe Rogan Quotes">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="https://cdn.glitch.com/b52ddbcb-7a27-4e87-9e5b-c82fa783b93c%2Fjoe-rogan-experiences.png?v=1566497652235">
+      <h1>The Joe Rogan API Experience</h1>
+    </header>
+
+    <main>
+      <div class="single-quote-container">
+        <h2>For a single quote return:</h2>
+        <div class="markdown-container single-quote">
+          <pre>https://joeroganapi.glitch.me/quotes</pre>
+        </div>
+      </div>
+      <div class="multiple-quote-container">
+        <h2>For a multiple quote return:</h2>
+        <p>Replace num with the amount of quotes you want returned. (max 50)</p>
+        <div class="markdown-container multiple-quote">
+          <pre>https://joeroganapi.glitch.me/quotes?count=num</pre>
+        </div>
+      </div>
+      <div class="example-quote-container">
+        <h2>Example return:</h2>
+        <div class="markdown-container example-quote">
+          <pre>[
+  {
+    quote: "There is a direct correlation between positive energy and positive results.",
+    author: "Joe Rogan"
+  }
+]
+          </pre>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Designed by Zander</h2>
+    </footer>
+
+  
+
+  </body>
+</html>
